@@ -86,7 +86,7 @@ $numberOfFiles = sizeOf($fileArr);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Keyboard Man</title>
+<title>ThePeopleMind</title>
 
 <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 2300px)" href="tinyScreen.css" />
 
@@ -110,7 +110,7 @@ $numberOfFiles = sizeOf($fileArr);
                                 </div>
     	 </div>
         
-	<div id = "left">
+	<div id = "center">
         <?php foreach($post_data as $post){
 			?>
            <div id = "blog_entry">
@@ -120,6 +120,7 @@ $numberOfFiles = sizeOf($fileArr);
                 </div>
                 	<?php echo $post['CONTENT']; ?>
                     <div><br/><a href = "comment.php">comment</a>&nbsp;
+                    
             				<a href = "<?php echo $post['POLLADDRESS']; ?>">To Poll</a>&nbsp;
                    			<a href = "<?php echo $post['POLLRESULTADDRESS']; ?>">Result of Poll</a>&nbsp;
                     </div>
