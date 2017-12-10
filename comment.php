@@ -19,7 +19,7 @@ if(isset($_POST['content'])){
 	if(file_exists($folder) == false){
 		
 			$ok = false;
-			$msg = '<font color = red>添加日志失败</font>';
+			$msg = '<font color = red>fail</font>';
 			
 		}
 		$fp = @fopen($filename, 'w');
@@ -31,7 +31,7 @@ if(isset($_POST['content'])){
 			}
 			if(strlen($result)>0){
 				
-				$msg = '评论成功, <a href = "index.php?entry='.$entry.'">返回首页</a>';
+				$msg = 'Success, <a href = "index.php?entry='.$entry.'">Return to home page</a>';
 				echo $msg;
 				}
 	}
@@ -39,7 +39,7 @@ if(isset($_POST['content'])){
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Keyboard Man</title>
+<title>ThePeopleMind</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
 
@@ -47,7 +47,7 @@ if(isset($_POST['content'])){
 <div id = "container">
 	<div id = "header">
     	<div class="text" style=" text-align:center;">
-    	  <h1>键盘侠   	</h1>
+    	  <h1>ThePeopleMind   	</h1>
     	</div>
         </div>
        
@@ -55,7 +55,7 @@ if(isset($_POST['content'])){
   <div id = "left"> 
         	<div id = "blog_entry">
             	<div id = "blog_title">
-            	  <div align="center">评论</div>
+            	  <div align="center">Comment</div>
             	</div>
                 <div id = "blog_body">
                 	<!--<div id = "blog_date"></div>-->
@@ -66,9 +66,9 @@ if(isset($_POST['content'])){
                             <!--<td width="200">标题:</td></tr>
                           <tr><td><input type = "text" name = "title" size = "54"></td></tr> -->
                           <tr>
-                            <td>内容:</td></tr>
+                            <td>What you want to say:</td></tr>
                           <tr><td><textarea name = "content" cols = "42" rows = "10"></textarea></td></tr>
-                          <tr><td><input type = "submit" value = "提交"></td></tr>
+                          <tr><td><input type = "submit" value = "submit"></td></tr>
                         </form>
                         </table>
                     </div>
@@ -79,7 +79,7 @@ if(isset($_POST['content'])){
         	<!-- blog_entry-->
             </div>
         <div id = "footer">
-          Keyboard Man</div>
+          ThePeopleMind</div>
                     </div>                    
 </body>
 </html>
